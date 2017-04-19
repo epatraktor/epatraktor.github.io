@@ -4,8 +4,21 @@
          font-family: volvolife;
          src: url(VolvoBroadPro.otf);
  }
+ .blinker {
+       animation: blinker 1s linear infinite;
+ }
+
+ @keyframes blinker {  
+     100% { color: chocolate; }
+     80% { color: orange; }
+     60% { color: blue; }
+     40% { color: magenta; }
+     20% { color: red; }
+     0% { color: Chartreuse; } 
+       
+ }
 </style>
-    <h1 style="text-align: center; font-family: volvolife; font-size: 80px;"> Volvo e livet </h1>
+    <h1 class="blinker" style="text-align: center; font-family: volvolife; font-size: 80px;"> Volvo e livet </h1>
     <div style="margin: 0; display: flex; align-items: center; justify-content: center">
         <img src="epa.jpg">
     </div>
